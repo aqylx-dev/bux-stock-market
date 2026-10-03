@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CLASSIFIED</title>
+  
+  <style>
+    body {
+      background: #101820;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+    
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    #result {
+      margin: 20px;
+      font-weight: bold;
+    }
+    
+    #secret {
+      display: none;
+    }
+    
+    #giantG {
+      font-size: 250px;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    #gMessage {
+      display: none;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <h1>🔐 CLASSIFIED</h1>
+  
+  <p>Enter the password:</p>
+  
+  <input id="code" type="text">
+  <button onclick="checkCode()">ENTER</button>
+  
+  <p id="result"></p>
+  
+  <button id="hintButton">hint vro!</button>
+<p id="hint"></p>
+  
+  <div id="secret">
+    
+    <h2>how?!?! hacker!!!1!1!😢</h2>
+    
+    <div id="giantG" onclick="clickG()">G</div>
+    
+    <p id="gMessage">
+      im g and i make the stocks skyrocket the opposite way😈😈
+    </p>
+    
+    <br>
+    
+    <button onclick="freeBux()">
+      free bux 🤑
+    </button>
+    
+    <small>hey guys click the free bux button it gives you 100 thousane bux fr</small>
+    
+  </div>
+  
+  
+  <script>
+  function checkCode() {
+  let code = document.getElementById("code").value;
+
+  if (code === "verysecurecode123") {
+    document.getElementById("result").textContent =
+      "how?!?! hacker!!!1!1!😢";
+
+    document.getElementById("secret").style.display =
+      "block";
+  } else {
+    document.getElementById("result").textContent =
+      "vro... that incorrect ❌";
+    }
+  }
+
+  function clickG() {
+  document.getElementById("gMessage").style.display =
+    "block";
+  }
+
+  function freeBux() {
+  window.location.href =
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  }
+  </script>
+  
+  <script>
+  let hintNumber = 0;
+
+  const hintButton = document.getElementById("hintButton");
+  const hint = document.getElementById("hint");
+
+  hintButton.addEventListener("click", function() {
+    hintNumber++;
+
+  if (hintNumber === 1) {
+    hint.textContent = "Hint #1: It's very secure.";
+  } 
+  else if (hintNumber === 2) {
+    hint.textContent = "Hint #2: It starts with 'very'.";
+  } 
+  else if (hintNumber === 3) {
+    hint.textContent = "Hint #3: It ends with 123.";
+  } 
+  else if (hintNumber === 4) {
+    hint.textContent = "Hint #4: it's literally verysecurecode123 vro";
+  } 
+  else {
+    hint.textContent = "there are no more hints vro its verysecurecode123";
+    }
+  });
+  </script>
+  
+</body>
+
+</html>
